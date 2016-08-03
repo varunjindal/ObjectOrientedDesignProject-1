@@ -1,0 +1,9 @@
+In run.bat file
+
+First argument is for the store flag : Output will be stored to a text file ot not : Values possible n or y
+
+Second argument is for the comment flag : Comments will be displayed or not : Values possible n or y
+
+
+=============================================================================================================
+

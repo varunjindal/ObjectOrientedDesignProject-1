@@ -1,0 +1,123 @@
+
+ -- newline
+ -- /* This is a C style comment and this program is written to test Requirement 4 of this project. It collects the following token types:
+	- alphanumeric tokens
+	- punctuator tokens
+	- special one and two character tokens with defaults that may be changed by calling setSpecialSingleChars(string ssc) and/or setSpecialCharPairs(string scp).
+	- C style comments returned as a single token
+	- C++ style comments returned as a single token
+	- quoted strings
+	- In this program every CPP comment says what tokens next line includes
+*/
+ -- newline
+ -- newline
+ -- //punctuator , alphanumeric and special one character tokens
+ -- newline
+ -- #
+ -- define
+ -- <
+ -- iostream
+ -- >
+ -- newline
+ -- int
+ -- main
+ -- (
+ -- )
+ -- newline
+ -- {
+ -- newline
+ -- //double quoted strings
+ -- newline
+ -- string
+ -- test
+ -- =
+ -- this is a regular string
+ -- ;
+ -- newline
+ -- //blank string
+ -- newline
+ -- test
+ -- =
+ -- ;
+ -- newline
+ -- //string with quotes 
+ -- newline
+ -- test
+ -- =
+ -- this is "quoted" string
+ -- ;
+ -- newline
+ -- test
+ -- =
+ -- \\\\
+ -- ;
+ -- newline
+ -- //single quoted chars
+ -- newline
+ -- char
+ -- ch
+ -- =
+ -- "
+ -- ;
+ -- newline
+ -- ch
+ -- =
+ -- '
+ -- ;
+ -- newline
+ -- ch
+ -- =
+ -- N
+ -- ;
+ -- newline
+ -- }
+ -- newline
+ -- //Following lines are syntactically wrong but written for test purpose only
+ -- newline
+ -- punctuator
+ -- list
+ -- =
+ -- ~
+ -- !
+ -- @
+ -- #
+ -- $
+ -- &
+ -- _
+ -- newline
+ -- special
+ -- one
+ -- character
+ -- tokens
+ -- =
+ -- <
+ -- >
+ -- [
+ -- ]
+ -- (
+ -- )
+ -- {
+ -- }
+ -- :
+ -- =
+ -- +
+ -- -
+ -- *
+ -- \n
+ -- newline
+ -- special
+ -- two
+ -- character
+ -- tokens
+ -- =
+ -- <<
+ -- >
+ -- ::
+ -- ++
+ -- --
+ -- ==
+ -- +=
+ -- -=
+ -- *=
+ -- /=
+ -- newline

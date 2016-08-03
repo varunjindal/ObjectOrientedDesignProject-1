@@ -1,0 +1,92 @@
+
+  -- semiExpression --
+  /*	Varun
+	This program is written to test Requirement 7 and 8 of this project.
+	
+	- Shall terminate a token collection after extracting any of the single character tokens: semicolon, open brace, closed brace. Also on extracting newline if a "#" is the first character on that line. Also, the extraction of a single character token consisting of ":" if immediately preceeded by one of the tokens: "public", "protected", or "private".
+	
+	- Shall provide a facility providing rules to ignore certain termination characters under special circumstances. You are required to provide a rule to ignore the (two) semicolons within parentheses in a for(;;) expression.
+*/ 
+
+  -- semiExpression --
+  # include < string > 
+
+  -- semiExpression --
+  # include < iostream > 
+
+  -- semiExpression --
+  class Test { 
+
+  -- semiExpression --
+  public : 
+
+  -- semiExpression --
+  Test ( ) ; 
+
+  -- semiExpression --
+  ~ Test ( ) ; 
+
+  -- semiExpression --
+  void fun1 ( ) ; 
+
+  -- semiExpression --
+  void fun2 ( ) ; 
+
+  -- semiExpression --
+  private : 
+
+  -- semiExpression --
+  int m1 ; 
+
+  -- semiExpression --
+  string m2 ; 
+
+  -- semiExpression --
+  } 
+
+  -- semiExpression --
+  ; 
+
+  -- semiExpression --
+  Test :: fun1 ( ) { 
+
+  -- semiExpression --
+  for ( int i = 0 ; i < 10 ; i ++ ) { 
+
+  -- semiExpression --
+  std :: cout << i ; 
+
+  -- semiExpression --
+  } 
+
+  -- semiExpression --
+  } 
+
+  -- semiExpression --
+  Test :: fun2 ( ) { 
+
+  -- semiExpression --
+  for ( int i = 0 ; i < 10 ; i ++ ) ; 
+
+  -- semiExpression --
+  } 
+
+  -- semiExpression --
+  int main ( ) { 
+
+  -- semiExpression --
+  Test t1 ; 
+
+  -- semiExpression --
+  t1 . fun1 ( ) ; 
+
+  -- semiExpression --
+  t1 . fun2 ( ) ; 
+
+  -- semiExpression --
+  return 0 ; 
+
+  -- semiExpression --
+  
+
+

@@ -1,0 +1,32 @@
+
+/* This is a C style comment and this program is written to test Requirement 4 of this project. It collects the following token types:
+	- alphanumeric tokens
+	- punctuator tokens
+	- special one and two character tokens with defaults that may be changed by calling setSpecialSingleChars(string ssc) and/or setSpecialCharPairs(string scp).
+	- C style comments returned as a single token
+	- C++ style comments returned as a single token
+	- quoted strings
+	- In this program every CPP comment says what tokens next line includes
+*/
+
+//punctuator , alphanumeric and special one character tokens
+#define <iostream>
+int main()
+{
+	//double quoted strings
+	string test = "this is a regular string";
+	//blank string
+	test = "";
+	//string with quotes 
+	test = "this is \"quoted\" string";
+	test = "\\\\";
+	//single quoted chars
+	char ch = '\"';
+	ch = '\'';
+	ch = 'N';
+}
+//Following lines are syntactically wrong but written for test purpose only
+punctuator list = ~!@#$&_
+special one character tokens = <>[](){}:=+-*\n
+special two character tokens = <<>::++--==+=-=*=/=
+

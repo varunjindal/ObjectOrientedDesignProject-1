@@ -1,0 +1,7 @@
+
+ -- @
+ -- @
+ -- @
+ -- @
+
+Output Text File will be generated in Project Directory : ./setSpecialSingle.txt
